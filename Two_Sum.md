@@ -1,4 +1,5 @@
-code:
+code:  
+```python
 class Solution(object):
     def twoSum(self, nums, target):
         """
@@ -22,3 +23,4 @@ class Solution(object):
         for i in range(middle):
             if (target - temp[i]) in back:
                 return [nums.index(temp[i]), nums.index(target-temp[i])]
+```
