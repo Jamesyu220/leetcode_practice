@@ -1,5 +1,6 @@
-code
-c++:
+code  
+c++:  
+```c
 class Solution {
 public:
     bool isValid(string s) {
@@ -27,8 +28,10 @@ public:
         else return false;
     }
 };
+```
 
-python:
+python:  
+```python
 class Solution(object):
     def isValid(self, s):
         """
@@ -64,3 +67,4 @@ class Solution(object):
             return True
         else:
             return False
+```
