@@ -44,5 +44,5 @@ public:
     }
 };
 ```
-Runtime: 6 ms, faster than 72.4% of C++ online submissions for Roman to Integer.  
-Memory Usage: 8 MB, less than 51.93% of C++ online submissions for Roman to Integer.  
+Runtime: 6 ms, faster than 72.4% of C++ online submissions for Counting Bits.  
+Memory Usage: 8 MB, less than 51.93% of C++ online submissions for Counting Bits.  
