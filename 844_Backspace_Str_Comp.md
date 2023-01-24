@@ -55,4 +55,5 @@ public:
     }
 };
 ```
-Results:  
+Runtime: 2 ms, faster than 56.74% of C++ online submissions for backspace string compare.
+Memory Usage: 6.3 MB, less than 47.51% of C++ online submissions for backspace string compare.
