@@ -1,6 +1,7 @@
 Given two strings s and t, return true if they are equal when both are typed into empty text editors. '#' means a backspace character.  
 
 Note that after backspacing an empty text, the text will continue empty.  
+
 Example 1:  
 ```
 Input: s = "ab#c", t = "ad#c"
@@ -55,5 +56,5 @@ public:
     }
 };
 ```
-Runtime: 2 ms, faster than 56.74% of C++ online submissions for backspace string compare.
+Runtime: 2 ms, faster than 56.74% of C++ online submissions for backspace string compare.  
 Memory Usage: 6.3 MB, less than 47.51% of C++ online submissions for backspace string compare.
