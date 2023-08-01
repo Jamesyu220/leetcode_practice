@@ -1,6 +1,31 @@
-code  
-c++:  
-```c
+Given a string ```s``` containing just the characters ```'('```, ```')'```, ```'{'```, ```'}'```, ```'['``` and ```']'```, determine if the input string is valid.  
+
+An input string is valid if:  
+1.Open brackets must be closed by the same type of brackets.  
+2.Open brackets must be closed in the correct order.  
+3.Every close bracket has a corresponding open bracket of the same type.  
+ 
+Example 1:  
+```
+Input: s = "()"
+Output: true
+```
+
+Example 2:  
+```
+Input: s = "()[]{}"
+Output: true
+```
+
+Example 3:  
+```
+Input: s = "(]"
+Output: false
+```
+
+Code:  
+C++:  
+```c++
 class Solution {
 public:
     bool isValid(string s) {
@@ -30,7 +55,10 @@ public:
 };
 ```
 
-python:  
+Runtime: 0ms, beats 100% of users with C++.  
+Memory: 6.3mb, beats 35.62% of users with C++.  
+
+Python:  
 ```python
 class Solution(object):
     def isValid(self, s):
@@ -68,3 +96,6 @@ class Solution(object):
         else:
             return False
 ```
+
+Runtime: 13ms, beats 86.85% of users with Python.  
+Memory: 13.6mb, beats 23.89% of users with Python.  
