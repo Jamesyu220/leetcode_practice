@@ -66,3 +66,16 @@ public:
     }
 };
 ```
+
+Ideas:  
+After a task is implemented, the CPU must wait for at least n iterations to implement the same task again, so we set the length of a cycle to n+1.  
+If we take out the task that has the most frequency, for example, A, then we can put A in every cycle.  
+That is, [A, ?], [A, ?]..., [A]. There are A.freq cycles, except for the last cycle, the former A.freq-1 cycles have some spaces (?) can fill in other tasks.  
+Now, we consider the case that CPU needs idle time.  
+If there are some "?" that have no other tasks to fill in, then there will be idle time. In this case, the total time will be ```(n+1)*(A.freq-1) + num of tasks that have the max freq```.  
+If there are more other tasks than the positions of "?", then there will be no idle time, to the total time is the number of tasks.  
+Hence, we only need to take the larger one of the result of our formula and the number of tasks, that will be the answer.  
+
+Performance:  
+44 ms, beats 92.52% of C++ users.  
+38.04 MB, beats 64.29% of C++ users.  
